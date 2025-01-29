@@ -30,8 +30,8 @@ Route::middleware('auth')->group(function () {
 
     Route::post('/client/store', [ClientController::class, 'store']);
 
-    Route::get('/profile/edit', [ClientController::class, 'edit'])->name('profile.edit');
-    Route::post('/profile/update', [ClientController::class, 'update'])->name('profile.update');
+    Route::get('/profile/edit', [ClientController::class, 'edit'])->name('client.edit');
+    Route::post('/profile/update', [ClientController::class, 'update'])->name('client.update');
 });
 
 require __DIR__ . '/auth.php';
