@@ -44,8 +44,8 @@ const showingNavigationDropdown = ref(false);
                                     New Client
                                 </NavLink>
                                 <NavLink
-                                    :href="route('profile.edit')"
-                                    :active="route().current('profile.edit')"
+                                    :href="route('client.edit')"
+                                    :active="route().current('client.edit')"
                                 >
                                     Update Profile
                                 </NavLink>
