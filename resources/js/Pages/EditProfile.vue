@@ -263,7 +263,7 @@ const handleCompanyLogo = (event) => {
 };
 
 const submit = () => {
-    form.post("/profile/update", {
+    form.post(route("clientUpdate"), {
         forceFormData: true,
         onSuccess: () => {
             alert("Profile updated successfully!");
