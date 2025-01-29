@@ -44,8 +44,8 @@ const showingNavigationDropdown = ref(false);
                                     New Client
                                 </NavLink>
                                 <NavLink
-                                    :href="route('client.edit')"
-                                    :active="route().current('client.edit')"
+                                    :href="route('clientEdit')"
+                                    :active="route().current('clientEdit')"
                                 >
                                     Update Profile
                                 </NavLink>
@@ -155,6 +155,22 @@ const showingNavigationDropdown = ref(false);
                             :active="route().current('dashboard')"
                         >
                             Dashboard
+                        </ResponsiveNavLink>
+                    </div>
+                    <div class="space-y-1 pb-3 pt-2">
+                        <ResponsiveNavLink
+                            :href="route('newclient')"
+                            :active="route().current('newclient')"
+                        >
+                            New Client
+                        </ResponsiveNavLink>
+                    </div>
+                    <div class="space-y-1 pb-3 pt-2">
+                        <ResponsiveNavLink
+                            :href="route('clientEdit')"
+                            :active="route().current('clientEdit')"
+                        >
+                            Profile Update
                         </ResponsiveNavLink>
                     </div>
 
