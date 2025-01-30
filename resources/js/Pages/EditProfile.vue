@@ -26,7 +26,7 @@
                         class="w-full mt-1 p-2 border rounded-md"
                         required
                     />
-                    <span v-if="errors.email">
+                    <span v-if="errors.email" class="text-red-500">
                         {{ errors.email }}
                     </span>
                 </div>
@@ -58,7 +58,7 @@
                         @change="handleProfilePicture"
                         class="w-full mt-1 p-2 border rounded-md"
                     />
-                    <span v-if="errors.foto_profile">
+                    <span v-if="errors.foto_profile" class="text-red-500">
                         {{ errors.foto_profile }}
                     </span>
                     <progress
@@ -140,7 +140,7 @@
                         @change="handleCompanyLogo"
                         class="w-full mt-1 p-2 border rounded-md"
                     />
-                    <span v-if="errors.company_logo">
+                    <span v-if="errors.company_logo" class="text-red-500">
                         {{ errors.company_logo }}
                     </span>
                     <progress
