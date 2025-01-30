@@ -13,12 +13,15 @@ class ClientController extends Controller
 {
     public function edit()
     {
+
+
         $user = Auth::user();
         return inertia('EditProfile', ['user' => $user]);
     }
 
     public function update(Request $request)
     {
+        // dd($request->all());
         $user = Auth::user();
 
         $validated = $request->validate([
